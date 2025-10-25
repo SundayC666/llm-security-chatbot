@@ -308,7 +308,8 @@ def create_chatbot(use_ollama: bool = False) -> Optional[SecurityChatbot]:
         # Initialize LLM
         logger.info("Initializing LLM...")
         if use_ollama:
-            llm = LLMInterface(use_ollama=True, model="gemma3")
+            ollama_model = os.getenv('OLLAMA_MODEL', 'llama2:latest')
+            llm = LLMInterface(use_ollama=True, model=ollama_model)
         else:
             llm = LLMInterface(use_ollama=False, model="gpt-3.5-turbo")
         
