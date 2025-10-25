@@ -143,6 +143,15 @@ def main():
             value=os.getenv('USE_OLLAMA', 'false').lower() == 'true',
             help="Use local Ollama instead of OpenAI API. Requires Ollama to be installed and running."
         )
+
+        if use_ollama:
+            ollama_model = st.text_input(
+                "Ollama Model",
+                value=os.getenv('OLLAMA_MODEL', 'llama2:latest'),
+                help="Name of the Ollama model to use (e.g., llama2:latest, gemma2:latest)"
+            )
+            if ollama_model:
+                os.environ['OLLAMA_MODEL'] = ollama_model
         
         if not use_ollama:
             openai_key = st.text_input(
