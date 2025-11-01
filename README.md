@@ -362,7 +362,7 @@ This project is created for educational purposes as part of a university course 
 
 ## 👨‍💻 Author
 
-Created as part of LLM Security Project coursework.
+Sunday Chen
 
 ## 🙏 Acknowledgments
 
@@ -372,3 +372,21 @@ Created as part of LLM Security Project coursework.
 - HuggingFace for embedding models
 - Facebook Research for FAISS
 - Streamlit for the web framework
+
+- ## 🤖 AI Assistance Acknowledgment
+
+This project was developed with the assistance of AI tools:
+
+### Code Development
+- **Tool**: Claude 4.5 Sonnet (Anthropic)
+- **Date**: October 22, 2025
+- **Contribution**: Initial codebase generation including RAG pipeline, CVE collector, chatbot interface, and web application
+- **Human Modifications**: 
+  - Resolved package dependency conflicts (Python 3.13 compatibility)
+  - Implemented Claude API integration
+  - Optimized local LLM performance (Ollama)
+  - Added comprehensive error handling and testing suite
+  - Created installation automation scripts (`install.bat`, `install.sh`)
+  - Extensive debugging and optimization
+
+> **Note**: All AI-generated content was thoroughly reviewed, tested, and significantly modified to meet project requirements and ensure functionality.
