@@ -383,7 +383,7 @@ This project was developed with the assistance of AI tools:
 - **Contribution**: Initial codebase generation including RAG pipeline, CVE collector, chatbot interface, and web application
 - **Human Modifications**: 
   - Resolved package dependency conflicts (Python 3.13 compatibility)
-  - Implemented Claude API integration
+  - Implemented OpenAI API integration
   - Optimized local LLM performance (Ollama)
   - Added comprehensive error handling and testing suite
   - Created installation automation scripts (`install.bat`, `install.sh`)
